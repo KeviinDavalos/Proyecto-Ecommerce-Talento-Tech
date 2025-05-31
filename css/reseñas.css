@@ -1,0 +1,54 @@
+main{
+    padding: 1.2em;
+    /* margin: 1.2em; */
+}
+
+h1{
+    text-align: center;
+    font-size: 1.7em;
+}
+section{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+}
+.card_resenia{
+    border: 1px solid black;
+    padding: 15px;
+}
+.star{
+    font-size: 0.8em;
+    /* margin-top: 5px; */
+}
+.bxs-star{
+    
+}
+
+/* Tablet */
+@media (min-width: 426px){   
+    section{
+        justify-items: center;
+    }
+    .card_resenia{
+        width: 80%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 769px){
+    section{
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        row-gap: 20px;
+    }
+    .card_resenia{
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px){
+    section{
+        width: 65%;
+    }
+}
